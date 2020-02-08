@@ -112,4 +112,17 @@ export class AppComponent {
 
 ```
 
+# Screenshots
+* Initial rendering  
+
+    ![Initial rendered image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/initial_image.PNG)
+
+* While user hovering on rating component  
+
+    ![Hovering on rating component image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/hovering_image.PNG)
+
+* Once, user rate  
+
+    ![Rating component image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/rate_selected_image.PNG)
+
 > Thank you.
