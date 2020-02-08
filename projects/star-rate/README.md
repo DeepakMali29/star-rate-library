@@ -15,7 +15,7 @@ For now, one component is added in this library
 
 * Include our ```StarRateModule``` module in ```app.module.ts```
 ```javascript
-import { StarRateModule } from 'star-rate';
+import { StarRateModule } from 'ng-star-rate';
 
 @NgModule({
   declarations: [
@@ -51,7 +51,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { StarRateModule } from 'star-rate';
+import { StarRateModule } from 'ng-star-rate';
 
 @NgModule({
   declarations: [
@@ -76,11 +76,12 @@ export class AppModule { }
     Let's rate it!
   </h1>
     <star-rate-rating
-    [selctedColor]="selectColor"
-    [star]="item"
-    [maxRating]="maxRating"
-    [showRatingCounter]="showRatingCounter"
-    (ratingSelection)="selectedRating($event)"></star-rate-rating>
+      [selctedColor]="selectColor"
+      [star]="item"
+      [maxRating]="maxRating"
+      [showRatingCounter]="showRatingCounter"
+      (ratingSelection)="selectedRating($event)">
+    </star-rate-rating>
   <h1 *ngIf="myRating">
     Rated to {{myRating}}
   </h1>
@@ -112,7 +113,7 @@ export class AppComponent {
 
 ```
 
-# Screenshots
+<!-- # Screenshots
 * Initial rendering  
 
     ![Initial rendered image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/initial_image.PNG)
@@ -123,6 +124,6 @@ export class AppComponent {
 
 * Once, user rate  
 
-    ![Rating component image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/rate_selected_image.PNG)
+    ![Rating component image](https://github.com/DeepakMali29/star-rate-library/blob/master/projects/home/src/assets/rate_selected_image.PNG) -->
 
 > Thank you.

@@ -23,7 +23,8 @@
               "projects/home/src/assets"
             ],
             "styles": [
-              "projects/home/src/styles.css"
+              "projects/home/src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },
