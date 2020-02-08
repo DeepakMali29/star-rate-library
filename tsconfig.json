@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "star-rate": [
+        "dist/star-rate"
+      ],
+      "star-rate/*": [
+        "dist/star-rate/*"
+      ]
+    }
   }
 }

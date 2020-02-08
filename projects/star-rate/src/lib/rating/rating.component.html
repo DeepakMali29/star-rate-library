@@ -1,0 +1,13 @@
+<div class="rating">
+  <ul class="list">
+    <li
+    id="starId"
+    class="star"
+    *ngFor="let item of stars"
+    [ngClass]="{'active': item <= star}"
+    (click)="rate(item)">
+    <i class="fa" [ngClass]="item <= star ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i>
+  </li>
+</ul>
+<span *ngIf="showRatingCounter">{{ star }} of {{ maxRating }}</span>
+</div>

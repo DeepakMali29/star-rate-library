@@ -1,0 +1,16 @@
+<div class="center-align">
+  <h1>
+    Let's rate it!
+  </h1>
+    <star-rate-rating
+    [selctedColor]="selectColor"
+    [star]="item"
+    [maxRating]="maxRating"
+    [showRatingCounter]="showRatingCounter"
+    (ratingSelection)="selectedRating($event)"></star-rate-rating>
+  <h1 *ngIf="myRating">
+    Rated to {{myRating}}
+  </h1>
+</div>
+
+<router-outlet></router-outlet>
