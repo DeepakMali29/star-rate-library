@@ -2,28 +2,23 @@ import { Component, OnInit, Output, Input, EventEmitter, ElementRef } from '@ang
 
 @Component({
   selector: 'star-rate-rating',
-  templateUrl: './rating.component.html',
-  styles: [
-    `
-      .rating {
-        font-family: "Avenir", Helvetica, Arial, sans-serif;
-        font-size: 22px;
-        color: #a7a8a8;
-      }
-      .list {
-        margin: 0 0 5px 0;
-        padding: 0;
-        list-style-type: none;
-      }
-      .star {
-        display: inline-block;
-        cursor: pointer;
-      }
-      .star:hover ~ .star:not(.active) {
-        color: inherit;
-      }
-  `
-  ]
+  // templateUrl: './rating.component.html',
+  template: `
+  <div class="rating">
+    <ul class="list">
+      <li
+        id="starId"
+        class="star"
+        *ngFor="let item of stars"
+        [ngClass]="{'active': item <= star}"
+        (click)="rate(item)">
+        <i class="fa" [ngClass]="item <= star ? 'fa-star' : 'fa-star-o'" aria-hidden="true"></i>
+      </li>
+    </ul>
+    <span *ngIf="showRatingCounter">{{ star }} of {{ maxRating }}</span>
+  </div>
+  `,
+  styleUrls: ['./rating.component.css']
 })
 export class RatingComponent implements OnInit {
   @Input() selctedColor: string;

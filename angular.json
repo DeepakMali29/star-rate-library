@@ -23,8 +23,7 @@
               "projects/home/src/assets"
             ],
             "styles": [
-              "projects/home/src/styles.css",
-              "node_modules/font-awesome/css/font-awesome.css"
+              "projects/home/src/styles.css"              
             ],
             "scripts": []
           },
@@ -136,11 +135,6 @@
       "sourceRoot": "projects/star-rate/src",
       "projectType": "library",
       "prefix": "star-rate",
-      "schematics": {                           
-        "@schematics/angular:component": {      
-          "styleext": "css"                    
-        }                                       
-      }, 
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

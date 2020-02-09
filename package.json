@@ -7,6 +7,9 @@
     "home:build": "ng build home && npm i dist/star-rate --save-optional",
     "home:clinet": "ng serve home -o --prot 3000",
     "library:build": "npm run star-rate:build",
+    "build-lib": "ng build star-rate",
+    "npm-pack": "cd dist/star-rate && npm pack",
+    "package": "npm run build-lib && npm run npm-pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

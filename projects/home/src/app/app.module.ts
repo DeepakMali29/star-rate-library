@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // library
-import { StarRateModule } from 'star-rate';
+import { StarRateModule } from 'dist/star-rate';
 
 @NgModule({
   declarations: [
